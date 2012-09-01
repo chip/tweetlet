@@ -1,0 +1,19 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery-1.4.4.min.js"></script>
+
+<script type="text/javascript">
+$(function(){
+  var url = 'http://twitter.com/oauth/authorize';
+  $.getJSON( url, function( data ){
+    alert(data);
+	});
+});
+</script>
+
+</head>
+<body>
+        <h1>jQuery Howto's Tweets</h1>
+        <div id="posts">Getting your tweets...</div>
+</body>
+</html>
